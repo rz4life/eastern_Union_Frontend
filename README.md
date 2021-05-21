@@ -6,8 +6,8 @@ This is a project that bring the word of finace to a user, on this app, the user
 
 ### Wireframes
 
-![page 1](eastern_union/page_1)
-![page 2](eastern_union/page_2)
+![page 1](eastern_unionWireframe/page_1)
+![page 2](eastern_unionWireframe/page_2)
 
 ### User Stories
 > A user can signup and login
