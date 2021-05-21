@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Eastern Union 
+Final project about currency exchnage 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Overview 
+This is a project that bring the word of finace to a user, on this app, the user is able to convert any currency from one currency to another, also send money from any country.
 
-## Available Scripts
+### Wireframes
 
-In the project directory, you can run:
+![page 1](eastern_union/page_1)
+![page 2](eastern_union/page_2)
 
-### `yarn start`
+### User Stories
+> A user can signup and login
+> A user can save a specific currency
+> A user can delete a specific currency 
+> A user can edit his/her profile 
+> On load, a user sees top currencies in the world and can convert any currency to another.
+> A user can send money to another User 
+> A user can receive money from another user 
+> when logged in a user can see a list of all their sent money, and all their recieved money and unique transection Id 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### MVP List
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+> user can login and signup
+> user can convert any currency to another 
+> user can save and delete a specific currency
+> user can edit profile and make changes to account
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Streach Goal
 
-### `yarn build`
+> user can send money to another user in any currency 
+> user can receive money form another user in any currency 
+> reciever can pick up the money using a unique generated code at any location
+> incorporate balance 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### super strech Goal
+> the money can be recieved into the users bank account dirrectly 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### technology used 
+> React.js
+> css
+> Node.js
+> Express backend
+> sequelize 
