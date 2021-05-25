@@ -16,10 +16,6 @@ const Signup = (props) =>{
 
     const submitform = (e) =>{
         e.preventDefault()
-        console.log(process.env.REACT_APP_BACKEND_URL)
-        console.log(balance)
-        console.log(firstname)
-
         axios.post (`${process.env.REACT_APP_BACKEND_URL}/users/signup`, {
             firstname: firstname,
             lastname: lastname,
@@ -76,9 +72,21 @@ const Signup = (props) =>{
                     <input  placeholder = 'card Exp' value = {userCard_exp} onChange = {(e) =>(setUserCard_exp(e.target.value))}/>
                 </div>
 
-                <div className = 'input'>
+                {/* <div className = 'input'>
                     <input  placeholder = 'preferred currency' value = {prefered_currency} onChange = {(e) =>(setPrefered_currency(e.target.value))}/>
-                </div>
+                </div> */}
+                <label for = 'currency'> Select a Prefered currency </label>    
+                        <select name = 'currency' onChange = {(e) =>(setPrefered_currency(e.target.value))}>
+                                <option value = 'EUR'> EUR </option>
+                                <option value = 'MXN'> MXN </option>
+                                <option value = 'BRL'> BRL </option>
+                                <option value = 'CAD'> CAD </option>
+                                <option value = 'CNY'> CNY </option>    
+                                <option value = 'NGN'> NGN </option>    
+                                <option value = 'GBP'> GBP </option>    
+                                <option value = 'USD'> USD </option>    
+                                <option value = 'RUB'> RUB </option>    
+                        </select>
 
 
                 <div className = 'input'>

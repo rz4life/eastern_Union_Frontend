@@ -8,7 +8,11 @@ const Navbar = (props) =>{
             {
                 props.user ?
                 <>
-                <Link to = '/home' className = 'navtext'> Home</Link> 
+                <Link to = '/home' className = 'navtext'> Eastern Union</Link> 
+                {' | -- |'} {' -- | '}
+                <Link to = '/sendmoney' className = 'navtext'> Send Money</Link> 
+                {' | -- |'} {' -- | '}
+                <Link to = '/profile' className = 'navtext'> Profile</Link> 
                 {' | -- |'} {' -- | '}
                 <span onClick={() => {
                             localStorage.removeItem('userId')
