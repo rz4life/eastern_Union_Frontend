@@ -13,10 +13,7 @@ import Editprofile from './componet/editprofile'
 function App() {
   const [user, setUser] = useState(null)
   const [profileorcard, setProfileorcard] = useState(null)
-
-
   const getUserInfo = async () =>{
-    
     const userId = localStorage.getItem('userId')
     try {
     const user = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/users/getuser/${userId}`)
@@ -31,18 +28,13 @@ function App() {
   }
   useEffect(() =>{getUserInfo()}, [])
 
-
   return (
     <div className="App">
       <Navbar user = {user}  setUser = {setUser}/>
 
       <Route path = '/home' exact render = {() =>{
-        if(user)
-        {
           return <Home user = {user}/>
-        }else{
-          return <Redirect to = "/login"/>
-        }
+  
         
       }}/>
 

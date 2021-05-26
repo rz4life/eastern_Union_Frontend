@@ -77,18 +77,16 @@ const Signup = (props) =>{
                 </div> */}
                 <label for = 'currency'> Select a Prefered currency </label>    
                         <select name = 'currency' onChange = {(e) =>(setPrefered_currency(e.target.value))}>
-                                <option value = 'EUR'> EUR </option>
-                                <option value = 'MXN'> MXN </option>
-                                <option value = 'BRL'> BRL </option>
-                                <option value = 'CAD'> CAD </option>
-                                <option value = 'CNY'> CNY </option>    
-                                <option value = 'NGN'> NGN </option>    
-                                <option value = 'GBP'> GBP </option>    
-                                <option value = 'USD'> USD </option>    
-                                <option value = 'RUB'> RUB </option>    
+                                <option value = 'EUR'> Euro area Countries (EUR) </option>
+                                <option value = 'MXN'> Mexican Pesos (MXN) </option>
+                                <option value = 'BRL'> Brazillian real (BRL) </option>
+                                <option value = 'CAD'> Canadian Dollar (CAD) </option>
+                                <option value = 'CNY'> Chinese yuan (CNY) </option>    
+                                <option value = 'NGN'> Nigerian Naira (NGN) </option>    
+                                <option value = 'GBP'> Pounds Sterling(GBP)</option>    
+                                <option value = 'USD'> US Dollar (USD) </option>    
+                                <option value = 'RUB'> Russian Ruble (RUB) </option>   
                         </select>
-
-
                 <div className = 'input'>
                     <input type = 'submit' value = 'Sign up!'/>
                 </div>
