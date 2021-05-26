@@ -4,12 +4,12 @@
   height: 700px;
 }
 .navbar{
-  color: yellow;
+  color: #fd0;
   background-color: black;
   z-index: 100;
 }
 .navtext{
-  color: yellow;
+  color: #fd0;
   font-size: 15px;
   justify-content: space-evenly;
   cursor: pointer;
@@ -17,19 +17,21 @@
   text-decoration: none;
 }
 .navtextlogo{
-  color: yellow;
+  color: #fd0;
   font-size: 50px;
   font-weight: 800;
   justify-content: space-evenly;
   cursor: pointer;
   text-decoration: none;
+  /* position: absolute; */
+  right: 2%;
 }
 .actiontext{
   border: 2px solid black;
   border-radius: 10%;
   width: 200px;
   align-items: center;
-  color: yellow;
+  color: #fd0;
   background-color: black;
   cursor: pointer;
   font-size: 20px;

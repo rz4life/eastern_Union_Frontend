@@ -11,7 +11,6 @@ const SendMoney = () =>{
     const [page, setPage] = useState('')
     const [result, setResult] = useState(0)
     const [symbol, setSymbol] = useState('$')
-    const [show, setShow] = useState('searchbar')
 
 
 
@@ -39,7 +38,6 @@ const SendMoney = () =>{
     }
 
     const expectedAmount = () =>{
-
         if(currency === 'EUR'){
             setResult(amount*exchange.USDEUR)
             setSymbol('€')
