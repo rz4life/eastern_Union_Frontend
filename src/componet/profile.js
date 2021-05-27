@@ -17,9 +17,9 @@ return(
         </Link>
         <h3> Card Information</h3>
         <br/>
-        <h5>Card Name:- {props.user.userCard_name}</h5>
-        <h5>Card Number:- {props.user.userCard_num}</h5>
-        <h5>Card Exp:- {props.user.userCard_exp}</h5>
+        <h5>Card Name:- {props.user.userCardName}</h5>
+        <h5>Card Number:- {props.user.userCardNum}</h5>
+        <h5>Card Exp:- {props.user.userCardExp}</h5>
 
         <Link to = '/editprofile'>
             <button  onClick = {() => (

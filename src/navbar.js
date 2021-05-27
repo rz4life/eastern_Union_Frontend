@@ -11,6 +11,7 @@ const Navbar = (props) =>{
                 props.user ?
                 <>
                 <Link to = '/sendmoney' className = 'navtext'> Send Money</Link> 
+                <Link to = '/viewhistory' className = 'navtext'> View History</Link> 
                
                 <Link to = '/profile' className = 'navtext'> Profile</Link> 
                

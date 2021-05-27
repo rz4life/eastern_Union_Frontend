@@ -21,14 +21,16 @@ const Home =() =>{
     }
      useEffect(() =>{getliveExchnage()}, [])
     return(
-            <div>
+            <div className='homepage'>
+                <div className = 'current'>
                 <h2>Current Rates</h2>
-                <h3>Mexican Peso:- ${exchange.USDMXN} to $1</h3>
-                <h3>Euro:- €{exchange.USDEUR} to $1</h3>
-                <h3>Naira:- ₦{exchange.USDNGN} to $1</h3>
-                <h3>Pound:- £{exchange.USDGBP} to $1</h3>
-                <h3>US Dollar:- ${exchange.USDUSD} to $1</h3>
-
+                <h3 >Mexican Peso:-<a className = 'rate'>${exchange.USDMXN} to $1</a></h3>
+                <h3 >Euro:- <a className = 'rate'>€{exchange.USDEUR} to $1</a></h3>
+                <h3 >Naira:- <a className = 'rate'>₦{exchange.USDNGN} to $1</a></h3>
+                <h3 >Pound:- <a className = 'rate'>£{exchange.USDGBP} to $1</a></h3>
+                <h3 >US Dollar:- <a className = 'rate'>${exchange.USDUSD} to $1</a></h3>
+                </div>
+                <div className = 'convert'>
                 <h2>Convert Money</h2>
                 <label for = 'currency'> Select a currency </label>    
                 <select name = 'currency' onChange = {(e) =>(setCurrency(e.target.value))}>
@@ -89,6 +91,7 @@ const Home =() =>{
                     }
                     }}>=</button>
                 <h3>Result:- {symbol}{result}</h3>
+                </div>
             </div>
     )
 }

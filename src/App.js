@@ -9,6 +9,7 @@ import Navbar from './navbar'
 import Profile from './componet/profile'
 import SendMoney from './componet/sendmoney'
 import Editprofile from './componet/editprofile'
+import ViewHistory from './componet/viewhistory'
 
 function App() {
   const [user, setUser] = useState(null)
@@ -42,6 +43,16 @@ function App() {
         if(user)
         {
           return <SendMoney/>
+        }else{
+          return <Redirect to = "/login"/>
+        }
+        
+      }}/>
+
+      <Route path = '/viewhistory' exact render = {() =>{
+        if(user)
+        {
+          return <ViewHistory/>
         }else{
           return <Redirect to = "/login"/>
         }

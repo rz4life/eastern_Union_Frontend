@@ -1,6 +1,6 @@
 import axios from 'axios'
 import {useEffect, useState} from 'react'
-import {Link} from 'react-router-dom'
+import {Link, Redirect} from 'react-router-dom'
 
 const SendMoney = () =>{
     const [friendemail, setFriendemail] = useState('')
@@ -16,7 +16,7 @@ const SendMoney = () =>{
 
     const getliveExchnage = async () =>{
         try {
-            const exchange = await axios.get(`http://api.currencylayer.com/live?access_key=f28a66f6ab65602d65a83baca3efc947&source=USD&currencies=EUR,MXN,BRL,GBP,CAD,CNY,NGN,USD,RUB&format=1`)
+          const exchange = await axios.get(`http://api.currencylayer.com/live?access_key=f28a66f6ab65602d65a83baca3efc947&source=USD&currencies=EUR,MXN,BRL,GBP,CAD,CNY,NGN,USD,RUB&format=1`)
           setExchange(exchange.data.quotes)
           console.log(exchange.data.quotes)
        
@@ -25,6 +25,24 @@ const SendMoney = () =>{
         }
     }
      useEffect(() =>{getliveExchnage()}, [amount])
+
+
+    const sendmoney = async() =>{
+
+        try {
+            const userId = localStorage.getItem('userId')
+            const sendmoney = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/transaction/createtransaction`,{
+                sendingUserId: userId,
+                amount: amount,
+                receivingUserId: alluser.id
+            })
+            console.log(sendmoney)
+            alert('money succefully sent')
+            
+        }catch(error){
+            console.log(error) 
+      }
+    }
 
 
     const submitform = (e) =>{
@@ -138,7 +156,9 @@ const SendMoney = () =>{
                         <h4>Expected Amount:- 
                         {symbol}{result}    
                             </h4>
-                        <button>Send Money</button>
+                       <Link to = '/viewhistory'> <button onClick= {() =>(
+                         sendmoney()
+                        )}>Send Money</button></Link>
                 </div>
     )
 

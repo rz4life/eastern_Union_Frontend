@@ -1,7 +1,11 @@
 .App {
   text-align: center;
   background-color: #fd0;
-  height: 700px;
+  /* height: 700px; */
+
+}
+body{
+  background-color: #fd0;
 }
 .navbar{
   color: #fd0;
@@ -23,8 +27,6 @@
   justify-content: space-evenly;
   cursor: pointer;
   text-decoration: none;
-  /* position: absolute; */
-  right: 2%;
 }
 .actiontext{
   border: 2px solid black;
@@ -41,4 +43,74 @@
   display:flex;
   align-items: center;
   justify-content: center;
+}
+.transactions{
+  display: flex;
+  flex-direction: row;
+  border:  2px solid black;
+  border-radius: 10%;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 10px;
+}
+.convert{
+  border: 2px solid black;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fd0;
+  background-color: black;
+  margin: 20px;
+  display:flex;
+  flex-direction: column;
+
+}
+.homepage{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.navtextlogo:hover{
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem #fd0;
+  transition: transform 150ms;
+  transform: scale(1.03);
+}
+.navtext:hover{
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem #fd0;
+  transition: transform 150ms;
+  transform: scale(1.03);
+}
+.actiontext:hover{
+  cursor: pointer;
+  box-shadow: 0 0.4rem 5.4rem rgb(243, 232, 232);
+  transition: transform 150ms;
+  transform: scale(1.09);
+}
+
+.input{
+  margin: 10px;
+  justify-content: center;
+}
+.current{
+  display: flex;
+  flex-direction: column;
+  
+}
+.rate{
+  position: relative;
+  animation-name: rates;
+  animation-duration: 10s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  left:10px
+}
+@keyframes rates{
+  0% {left: 0px; top: 0px;}
+  100% {left: 60px; top: 0px;}
 }

@@ -21,11 +21,11 @@ const Signup = (props) =>{
             lastname: lastname,
             email: email,
             password: password,
-            userCard_num: userCard_num,
-            userCard_name:userCard_name,
-            userCard_exp:userCard_exp,
+            userCardNum: userCard_num,
+            userCardName:userCard_name,
+            userCardExp:userCard_exp,
             balance:balance,
-            prefered_currency:prefered_currency
+            preferedCurrency:prefered_currency
         }).then ((response) =>{
             console.log(response.data)
             props.setUser(response.data.user)

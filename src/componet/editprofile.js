@@ -9,9 +9,9 @@ const Editprofile = (props) =>{
     const [lastname, setLastName] = useState(props.user.lastname)
     const [email, setEmail] = useState(props.user.email)
     const [password, setPassword] = useState(props.user.password)
-    const [userCard_num, setUserCard_num] = useState(props.user.userCard_num)
-    const [userCard_name, setUserCard_name] = useState(props.user.userCard_name)
-    const [userCard_exp, setUserCard_exp] = useState(props.user.userCard_exp)
+    const [userCard_num, setUserCard_num] = useState(props.user.userCardNum)
+    const [userCard_name, setUserCard_name] = useState(props.user.userCardName)
+    const [userCard_exp, setUserCard_exp] = useState(props.user.userCardExp)
     const [balance, setBalance] = useState(0)
     const [prefered_currency, setPrefered_currency] = useState(props.user.prefered_currency)
     
@@ -25,9 +25,9 @@ const Editprofile = (props) =>{
             lastname: lastname,
             email: email,
             password: password,
-            userCard_num: userCard_num,
-            userCard_name:userCard_name,
-            userCard_exp:userCard_exp,
+            userCardNum: userCard_num,
+            userCardName:userCard_name,
+            userCardExp:userCard_exp,
             balance:balance,
             prefered_currency:prefered_currency
         }).then ((response) =>{
