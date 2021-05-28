@@ -27,6 +27,8 @@ body{
   justify-content: space-evenly;
   cursor: pointer;
   text-decoration: none;
+  margin-right: 10px;
+  margin-left: -100px;
 }
 .actiontext{
   border: 2px solid black;
@@ -56,6 +58,7 @@ body{
 }
 .convert{
   border: 2px solid black;
+  border-radius: 10%;
   width: 70%;
   align-items: center;
   justify-content: center;
@@ -100,11 +103,18 @@ body{
   flex-direction: column;
   
 }
+.tosection{
+  background-color: black;
+  color: #fd0;
+  padding: 10px;
+  border-radius: 10%;
+  margin: 10px;
+}
 .rate{
   position: relative;
   animation-name: rates;
-  animation-duration: 10s;
-  animation-delay: 2s;
+  animation-duration: 15s;
+  animation-delay: 1s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
@@ -112,5 +122,5 @@ body{
 }
 @keyframes rates{
   0% {left: 0px; top: 0px;}
-  100% {left: 60px; top: 0px;}
+  100% {left: 120px; top: 0px;}
 }

@@ -38,10 +38,12 @@ const ViewHistory = () =>{
                         <div key = {i} className = 'transactions'>
                             <h2> You sent $ {transaction.amount}</h2>
                             <br/>
+                            <div className = 'tosection'>
                             <h3>To </h3>
 
                             <h4>{transaction.friend.firstname} {transaction.friend.lastname}</h4> 
                             <p>{transaction.friend.email}</p>
+                            </div>
                         </div>
 
                     ))
@@ -56,9 +58,11 @@ const ViewHistory = () =>{
                     receivedmoney.map((transaction, i ) =>(
                         <div key = {i} className = 'transactions'>
                             <h2> You received $ {transaction.amount}</h2>
+                            <div className = 'tosection'>
                             <h3>From </h3>
                             <h4>{transaction.friend.firstname} {transaction.friend.lastname}</h4> 
                             <p>{transaction.friend.email}</p>
+                            </div>
                         </div>
 
                     ))
